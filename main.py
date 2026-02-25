@@ -2,7 +2,7 @@ import requests, os, time, json
 
 # ════════════════════════════════════════════════════════
 # 🎯 تنظیمات هشدار
-TARGET_BUY_PRICE  = 529000
+TARGET_BUY_PRICE  = 525000
 BUY_THRESHOLD     = 1000
 
 TARGET_SELL_PRICE = 545000
@@ -140,6 +140,7 @@ while True:
         print(f"❌ خطا: {e}")
 
     time.sleep(20)
+
 
 
 
