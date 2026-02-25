@@ -6,7 +6,7 @@ TARGET_BUY_PRICE  = 525000
 BUY_THRESHOLD     = 1000
 
 TARGET_SELL_PRICE = 535000
-SELL_THRESHOLD    = 5000
+SELL_THRESHOLD    = 1000
 # ════════════════════════════════════════════════════════
 
 PRICE_BOT = {
@@ -140,4 +140,5 @@ while True:
         print(f"❌ خطا: {e}")
 
     time.sleep(20)
+
 
