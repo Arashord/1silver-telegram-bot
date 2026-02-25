@@ -6,7 +6,7 @@ TARGET_BUY_PRICE  = 525000
 BUY_THRESHOLD     = 1000
 
 TARGET_SELL_PRICE = 535000
-SELL_THRESHOLD    = 1000
+SELL_THRESHOLD    = 5000
 # ════════════════════════════════════════════════════════
 
 PRICE_BOT = {
@@ -67,7 +67,7 @@ def handle_price_bot(price):
 
     if price != last_price:
         emoji = "📈" if last_price and price > last_price else "📉"
-        msg = f"{emoji} قیمت لحظه‌ای نقره:\n{price:,} تومان"
+        msg = f"{emoji} قیمت هر گرم : {price:,} تومان"
         send(PRICE_BOT, msg)
         save_json(PRICE_FILE, {"price": price})
         print("✅ قیمت لحظه‌ای ارسال شد")
@@ -140,3 +140,4 @@ while True:
         print(f"❌ خطا: {e}")
 
     time.sleep(20)
+
