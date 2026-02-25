@@ -31,7 +31,7 @@ def send_to_telegram(price, old_price=None):
         change = price - old_price
         emoji = "📈" if change > 0 else "📉"
         msg = (
-            f"{emoji} قیمت هر گرم نقره:"
+            f"{emoji} قیمت هر گرم : "
             f"{price:,.0f} تومان\n"
         )
     else:
@@ -59,5 +59,6 @@ while True:
     except Exception as e:
         print(f"❌ خطا: {e}")
 
-    time.sleep(30)  # هر 3 ثانیه
+    time.sleep(20)  # هر 3 ثانیه
+
 
