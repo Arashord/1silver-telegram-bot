@@ -5,7 +5,7 @@ import requests, os, time, json
 TARGET_BUY_PRICE  = 510000
 BUY_THRESHOLD     = 1000
 
-TARGET_SELL_PRICE = 530000
+TARGET_SELL_PRICE = 535000
 SELL_THRESHOLD    = 1000
 # ════════════════════════════════════════════════════════
 
@@ -140,6 +140,7 @@ while True:
         print(f"❌ خطا: {e}")
 
     time.sleep(20)
+
 
 
 
